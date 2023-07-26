@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+:root {
+    --primary: #000;
+    --secondary: #fff;
+    --tertiary: #c00;
+    --bgclr: #eee;
+    --subtle: #333;
+}
+
 body {
     margin: 10px;
     font-family: 'Raleway', sans-serif;
-    background: #eee;
+    background: var(--bgclr);
 }
 
 p {
@@ -16,7 +24,7 @@ p {
     max-width: 800px;
     margin: 0 auto;
     overflow: hidden;
-    background: #fff;
+    background: var(--subtle);
 }
 
 nav {
@@ -29,7 +37,7 @@ nav {
 }
 
 form {
-    background: #cc0000;
+    background: var(--tertiary);
     color: #fff;
     text-align: center;
     padding: 40px;
@@ -42,14 +50,13 @@ form * {
 }
 
 .description {
-    background: #fff;
+    background: var(--secondary);
     padding: 20px;
     margin: 20px;
-    border: 2px dashed #f2f2f2;
 }
 
 input {
-    background: #eee;
+    background: var(--bgclr);
     border: 0;
     padding: 10px;
     border-radius: 4px;
@@ -58,19 +65,22 @@ input {
 }
 
 button {
-    background: #333;
-    color: #fff;
+    margin-top: 40px;
+    background: none;
+    border: 2px solid var(--secondary);
+    color: var(--secondary);
+    font-size: 1.5em;
     border-radius: 4px;
-    border-bottom: 5px solid #111;
-    border-left: 1px solid #111;
-    padding: 8px 24px;
+    padding: 16px 48px;
     cursor: pointer;
     display: block;
-    position: relative;
-    top: 0;
+    transition: 300ms;
+}
+
+button:hover {
+    background-color: var(--subtle);
 }
 
 button:active {
-    border-bottom-width: 2px;
-    top: 3px;
+    background-color: var(--primary);
 }
