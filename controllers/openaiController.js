@@ -2,8 +2,16 @@ const openai = require("../config/openaiConfig");
 
 const generateVocab = async (req, res) => {
   const prompt = `
-          Generate one SAT-level vocabulary term and provide a definition. Return something like the following:
-          Ostentatious - Displaying wealth, knowledge, or style in a way that is meant to impress others or attract attention.
+          Generate one SAT-level vocabulary term and provide a pronunciation guide, definition, and example. Return HTML like the following:
+          <div id="vocabulary">
+            <strong>Ostentatious</strong> <span id="pronunciation">(ah-sten-TAY-shuhs)</span>
+          </div>
+          <div id="definition">
+            Displaying wealth, knowledge, or style in a way that is meant to impress others or attract attention.
+          </div>
+          <div id="example">
+            &ldquo;At the charity gala, Susan arrived wearing a floor-length, ostentatious gown adorned with glittering diamonds, capturing the attention of everyone in the room.&rdquo;
+          </div>
         `;
 
   const response = await openai.createChatCompletion({
@@ -15,7 +23,7 @@ const generateVocab = async (req, res) => {
       },
     ],
     max_tokens: 100,
-    temperature: 1,
+    temperature: 1.25,
   });
 
   // response

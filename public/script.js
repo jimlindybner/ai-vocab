@@ -17,5 +17,5 @@ vocabForm.addEventListener("submit", async (e) => {
 
   console.log(data);
 
-  description.textContent = data.description.content;
+  description.innerHTML = data.description.content;
 });
