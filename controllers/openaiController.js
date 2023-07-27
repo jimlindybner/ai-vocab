@@ -22,7 +22,7 @@ const generateVocab = async (req, res) => {
         content: prompt,
       },
     ],
-    max_tokens: 100,
+    max_tokens: 1000,
     temperature: 1.25,
   });
 
