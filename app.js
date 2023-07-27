@@ -3,7 +3,12 @@ const { generateVocab } = require("./controllers/openaiController");
 
 // app setup
 const app = express();
-app.listen(4000, () => console.log("listening to requests on port 4000"));
+const port = process.env.PORT || "8888";
+
+//set up server listening
+app.listen(port, () => {
+  console.log(`Listening on http://localhost:${port}`);
+});
 
 // middleware
 app.use(express.json());
