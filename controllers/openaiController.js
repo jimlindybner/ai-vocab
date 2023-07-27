@@ -4,7 +4,7 @@ const generateVocab = async (req, res) => {
   const prompt = `
           Generate one SAT-level vocabulary term and provide a pronunciation guide, definition, and example. Return HTML like the following:
           <div id="vocabulary">
-            <strong>Ostentatious</strong> <span id="pronunciation">(ah-sten-TAY-shuhs)</span>
+            Ostentatious
           </div>
           <div id="definition">
             Displaying wealth, knowledge, or style in a way that is meant to impress others or attract attention.
