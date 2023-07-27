@@ -4,8 +4,9 @@ const vocabForm = document.querySelector(".vocab-form");
 // output elements
 const card = document.querySelector(".card p");
 
-// description
-vocabForm.addEventListener("submit", async (e) => {
+// functions
+
+const newCard = async (e) => {
   e.preventDefault();
 
   const res = await fetch("/openai/vocab", {
@@ -18,9 +19,12 @@ vocabForm.addEventListener("submit", async (e) => {
   console.log(data);
 
   card.innerHTML = data.response.content;
-});
+};
 
-// copyright year
+// event listeners
+vocabForm.addEventListener("submit", newCard);
+
+// footer - copyright year
 const newDate = new Date();
 const fullYear = newDate.getFullYear();
 const cpyr = document.querySelector("#copy-year");
