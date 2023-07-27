@@ -117,5 +117,5 @@ footer a:hover {
 }
 
 footer a:active {
-    font-weight: bold;
+    color: var(--subtle);
 }
