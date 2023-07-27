@@ -91,10 +91,6 @@ button:active {
     font-weight: bold;
 }
 
-span#pronunciation {
-    font-size: 0.5em;
-}
-
 #definition {
     margin-bottom: 1em;
 }
