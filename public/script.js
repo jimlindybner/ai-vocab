@@ -11,7 +11,6 @@ vocabForm.addEventListener("submit", async (e) => {
   const res = await fetch("/openai/vocab", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ title: vocabForm.title.value }),
   });
 
   const data = await res.json();
