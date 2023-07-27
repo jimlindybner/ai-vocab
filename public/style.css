@@ -106,3 +106,16 @@ footer {
     margin-top: 50px;
     text-align: center;
 }
+
+footer a {
+    color: var(--primary);
+    transition: 300ms;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+footer a:active {
+    font-weight: bold;
+}
