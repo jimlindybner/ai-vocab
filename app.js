@@ -3,7 +3,7 @@ const { generateVocab } = require("./controllers/openaiController");
 
 // app setup
 const app = express();
-const port = process.env.PORT || "8888";
+const port = process.env.PORT || "80";
 
 //set up server listening
 app.listen(port, () => {
