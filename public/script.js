@@ -4,7 +4,7 @@ const vocabForm = document.querySelector(".vocab-form");
 // output elements
 const card = document.querySelector(".card p");
 
-// description and tags
+// description
 vocabForm.addEventListener("submit", async (e) => {
   e.preventDefault();
 
