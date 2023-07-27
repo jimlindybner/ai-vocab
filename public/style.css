@@ -88,6 +88,7 @@ button:active {
 #vocabulary {
     font-size: 2em;
     margin-bottom: 0.75em;
+    font-weight: bold;
 }
 
 span#pronunciation {
