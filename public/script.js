@@ -17,7 +17,7 @@ vocabForm.addEventListener("submit", async (e) => {
 
   console.log(data);
 
-  card.innerHTML = data.description.content;
+  card.innerHTML = data.response.content;
 });
 
 // copyright year

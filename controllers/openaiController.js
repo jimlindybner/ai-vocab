@@ -30,7 +30,7 @@ const generateVocab = async (req, res) => {
   console.log(response.data.choices[0].message);
 
   res.status(200).json({
-    description: response.data.choices[0].message,
+    response: response.data.choices[0].message,
   });
 };
 
