@@ -2,7 +2,7 @@ const openai = require("../config/openaiConfig");
 
 const generateVocab = async (req, res) => {
   const prompt = `
-          Generate one SAT-level vocabulary term and provide a pronunciation guide, definition, and example. Return HTML like the following:
+          Generate one SAT-level vocabulary term and provide a definition and example. Return HTML like the following:
           <div id="vocabulary">
             Ostentatious
           </div>
