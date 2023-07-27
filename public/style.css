@@ -49,7 +49,7 @@ form * {
     margin: 10px auto;
 }
 
-.description {
+.card {
     background: var(--secondary);
     padding: 20px;
     margin: 20px;

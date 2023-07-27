@@ -2,7 +2,7 @@
 const vocabForm = document.querySelector(".vocab-form");
 
 // output elements
-const description = document.querySelector(".description p");
+const card = document.querySelector(".card p");
 
 // description and tags
 vocabForm.addEventListener("submit", async (e) => {
@@ -17,7 +17,7 @@ vocabForm.addEventListener("submit", async (e) => {
 
   console.log(data);
 
-  description.innerHTML = data.description.content;
+  card.innerHTML = data.description.content;
 });
 
 // copyright year
