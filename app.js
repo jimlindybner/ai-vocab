@@ -1,3 +1,6 @@
+// ****************
+// ***APP SETUP***
+// ****************
 const express = require("express");
 const path = require("path");
 
@@ -22,8 +25,9 @@ app.listen(port, () => {
   console.log(`Listening on http://localhost:${port}`);
 });
 
-// OPENAI API
-// configuration
+// ****************
+// ***OPENAI API***
+// ****************
 const { Configuration, OpenAIApi } = require("openai");
 require("dotenv").config();
 
@@ -61,8 +65,6 @@ const generateVocab = async (req, res) => {
   });
 
   // response
-  // console.log(response.data.choices[0].message.content);
-
   res.status(200).json({
     response: response.data.choices[0].message,
   });
@@ -90,7 +92,9 @@ app.use(express.static("public"));
 // route
 app.post("/openai/vocab", generateVocab);
 
-// TEXT-TO-SPEECH
+// ********************
+// ***TEXT-TO-SPEECH***
+// ********************
 const textToSpeech = require("@google-cloud/text-to-speech");
 const fs = require("fs");
 const util = require("util");

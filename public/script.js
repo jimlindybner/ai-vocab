@@ -23,20 +23,6 @@ const newCard = async (e) => {
 
   // display pronunciation btn
   btnPronounce.style.display = "block";
-
-  // call isolateVocab fn
-  isolateVocab();
-};
-
-const isolateVocab = () => {
-  // get #vocabulary element
-  var vocabElem = document.getElementById("vocabulary");
-
-  // extract text content
-  var word = vocabElem.textContent.trim();
-
-  // console log vocab
-  console.log(word);
 };
 
 // event listeners
