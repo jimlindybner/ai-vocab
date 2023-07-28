@@ -20,6 +20,10 @@ app.get("/", (request, response) => {
   response.render("index", { title: "Home" });
 });
 
+app.get("/pronounce", (request, response) => {
+  response.render("pronounce", { title: "Pronunciation" });
+});
+
 //set up server listening
 app.listen(port, () => {
   console.log(`Listening on http://localhost:${port}`);

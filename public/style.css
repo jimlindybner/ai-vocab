@@ -109,6 +109,13 @@ a#pronunciation:active {
     color: var(--primary);
 }
 
+audio#pronunciation {
+    width: 75%;
+    margin: auto;
+    padding: 10px;
+    display: block;
+}
+
 #vocabulary {
     font-size: 2em;
     margin-bottom: 0.75em;
