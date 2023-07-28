@@ -116,7 +116,7 @@ const util = require("util");
 
 const client = new textToSpeech.TextToSpeechClient();
 
-async function textToMp3(text) {
+const textToMp3 = async (text) => {
   const request = {
     input: { text: text },
     voice: { languageCode: "en-US", ssmlGender: "NEUTRAL" },
@@ -132,4 +132,4 @@ async function textToMp3(text) {
   await writeFile(outputPath, response.audioContent, "binary");
 
   console.log("Text to Speech complete: Audio file saved");
-}
+};
