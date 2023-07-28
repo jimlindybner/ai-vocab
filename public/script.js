@@ -1,5 +1,7 @@
 // forms & btns
 const vocabForm = document.querySelector(".vocab-form");
+const pornounceForm = document.querySelector("form.pronounce-form");
+const pronounceVocab = document.querySelector("#pronounce-vocab");
 const btnPronounce = document.querySelector("button#pronunciation");
 
 // output elements
@@ -23,15 +25,25 @@ const newCard = async (e) => {
 
   // display pronunciation btn
   btnPronounce.style.display = "block";
+
+  // calll isolateVocab fn
+  isolateVocab();
 };
 
-const getVocab = () => {
+const isolateVocab = () => {
   // get #vocabulary element
   var vocabElem = document.getElementById("vocabulary");
 
   // extract text content
   var word = vocabElem.textContent.trim();
-  console.log(word);
+
+  // call generateMP3 fn
+  setPronounceVocab(word);
+};
+
+const setPronounceVocab = async (text) => {
+  pronounceVocab.value = text;
+  console.log(pronounceVocab.value);
 };
 
 // event listeners

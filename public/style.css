@@ -49,6 +49,11 @@ form * {
     margin: 10px auto;
 }
 
+form.pronounce-form {
+    background: none;
+    padding: 0;
+}
+
 .card {
     background: var(--secondary);
     padding: 20px;
