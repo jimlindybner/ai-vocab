@@ -112,8 +112,8 @@ async function textToMp3(text) {
 
   const writeFile = util.promisify(fs.writeFile);
 
+  // output output.mp3 to public directory
   const outputPath = path.join(__dirname, "public", "output.mp3");
-
   await writeFile(outputPath, response.audioContent, "binary");
 
   console.log("Text to Speech complete: Audio file saved");
