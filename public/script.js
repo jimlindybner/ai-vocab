@@ -1,5 +1,6 @@
-// forms
+// forms & btns
 const vocabForm = document.querySelector(".vocab-form");
+const btnPronounce = document.querySelector("button#pronunciation");
 
 // output elements
 const card = document.querySelector(".card p");
@@ -19,6 +20,9 @@ const newCard = async (e) => {
   console.log(data);
 
   card.innerHTML = data.response.content;
+
+  // display pronunciation btn
+  btnPronounce.style.display = "block";
 };
 
 // event listeners
