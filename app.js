@@ -72,17 +72,32 @@ const generateVocab = async (req, res) => {
   // regex pattern to extract the vocabulary term
   generatedHTML = response.data.choices[0].message.content;
   console.log(generatedHTML);
-  const regex = /<div id="vocabulary">\s*(\w+)\s*<\/div>/;
-  const match = generatedHTML.match(regex);
+  const vocabRegex = /<div id="vocabulary">\s*(\w+)\s*<\/div>/;
+  const defRegex = /<div id="definition">\s*(.*?)\s*<\/div>/;
+  const exRegex = /<div id="example">\s*(.*?)\s*<\/div>/;
+  const vocabMatch = generatedHTML.match(vocabRegex);
+  const defMatch = generatedHTML.match(defRegex);
+  const exMatch = generatedHTML.match(exRegex);
 
   // check for match & extract vocabulary term
-  let vocabularyTerm;
-  if (match && match.length >= 2) {
-    vocabularyTerm = match[1];
+  let textToSpeech;
+  let termVocab;
+  let termDef;
+  let termEx;
+  if (vocabMatch && vocabMatch.length >= 2) {
+    termVocab = vocabMatch[1];
+  }
+  if (defMatch && defMatch.length >= 2) {
+    termDef = defMatch[1];
+  }
+  if (exMatch && exMatch.length >= 2) {
+    termEx = exMatch[1];
   }
 
+  textToSpeech = `The vocabulary term "${termVocab}" means ${termDef}. And here is an example sentence: ${termEx}`;
+
   // call textToMp3 with vocabulary term as argument
-  textToMp3(vocabularyTerm);
+  textToMp3(textToSpeech);
 };
 
 // middleware
