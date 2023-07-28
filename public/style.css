@@ -90,16 +90,18 @@ button:active {
     background-color: var(--primary);
 }
 
-button#pronunciation {
-    color: var(--subtle);
-    border-color: var(--subtle);
-    font-size: 1rem;
-    padding: 8px 24px;
+a#pronunciation {
     display: none;
+    color: var(--subtle);
+    padding: 10px;
 }
 
-button#pronunciation:hover {
-    color: var(--secondary);
+a#pronunciation:hover {
+    text-decoration: none;
+}
+
+a#pronunciation:active {
+    color: var(--primary);
 }
 
 #vocabulary {

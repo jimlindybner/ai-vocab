@@ -7,6 +7,5 @@ block main-content
         button See Card
     .card 
         p Click "See Card" to see your vocab&nbsp;card!
-        form.pronounce-form
-            input(type="hidden", name="pronounce-vocab", id="pronounce-vocab")
-            button#pronunciation Pronunciation
+        a(href="/output.mp3", target="_blank", id="pronunciation") Pronunciation
+        

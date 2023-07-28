@@ -77,9 +77,7 @@ app.post("/openai/vocab", generateVocab);
 
 // TEXT-TO-SPEECH
 const textToSpeech = require("@google-cloud/text-to-speech");
-
 const fs = require("fs");
-
 const util = require("util");
 
 const client = new textToSpeech.TextToSpeechClient();
