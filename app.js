@@ -23,6 +23,7 @@ app.listen(port, () => {
 });
 
 // OPENAI API
+// configuration
 const { Configuration, OpenAIApi } = require("openai");
 require("dotenv").config();
 
