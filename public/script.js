@@ -43,7 +43,7 @@ const generateMp3 = async (text) => {
   console.log(text);
   // send text to app.js
   // call textToMp3 with text as argument
-  textToMp3(text);
+  // textToMp3(text);
 };
 
 // event listeners
