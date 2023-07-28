@@ -1,5 +1,5 @@
 .DS_Store
 .env
-serviceAccount.json
+serviceaccount.json
 node_modules
 output.mp3
