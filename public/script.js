@@ -1,14 +1,11 @@
-// forms & btns
+// form & btns
 const vocabForm = document.querySelector(".vocab-form");
-const pornounceForm = document.querySelector("form.pronounce-form");
-const pronounceVocab = document.querySelector("#pronounce-vocab");
 const btnPronounce = document.querySelector("#pronunciation");
 
-// output elements
+// output element
 const card = document.querySelector(".card p");
 
-// functions
-
+// newCard fn
 const newCard = async (e) => {
   e.preventDefault();
 
@@ -25,7 +22,7 @@ const newCard = async (e) => {
   btnPronounce.style.display = "block";
 };
 
-// event listeners
+// event listener
 vocabForm.addEventListener("submit", newCard);
 
 // footer - copyright year
