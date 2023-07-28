@@ -25,6 +25,15 @@ const newCard = async (e) => {
   btnPronounce.style.display = "block";
 };
 
+const getVocab = () => {
+  // get #vocabulary element
+  var vocabElem = document.getElementById("vocabulary");
+
+  // extract text content
+  var word = vocabElem.textContent.trim();
+  console.log(word);
+};
+
 // event listeners
 vocabForm.addEventListener("submit", newCard);
 
