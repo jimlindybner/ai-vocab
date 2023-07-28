@@ -75,7 +75,7 @@ const generateVocab = async (req, res) => {
 
   // regex pattern to extract the vocabulary term
   generatedHTML = response.data.choices[0].message.content;
-  console.log(generatedHTML);
+  // console.log(generatedHTML);
   const vocabRegex = /<div id="vocabulary">\s*(\w+)\s*<\/div>/;
   const defRegex = /<div id="definition">\s*(.*?)\s*<\/div>/;
   const exRegex = /<div id="example">\s*(.*?)\s*<\/div>/;
@@ -135,5 +135,5 @@ const textToMp3 = async (text) => {
   const outputPath = path.join(__dirname, "public", "output.mp3");
   await writeFile(outputPath, response.audioContent, "binary");
 
-  console.log("Text to Speech complete: Audio file saved");
+  // console.log("Text to Speech complete: Audio file saved");
 };
