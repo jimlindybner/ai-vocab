@@ -61,11 +61,26 @@ const generateVocab = async (req, res) => {
   });
 
   // response
-  console.log(response.data.choices[0].message);
+  // console.log(response.data.choices[0].message.content);
 
   res.status(200).json({
     response: response.data.choices[0].message,
   });
+
+  // regex pattern to extract the vocabulary term
+  generatedHTML = response.data.choices[0].message.content;
+  console.log(generatedHTML);
+  const regex = /<div id="vocabulary">\s*(\w+)\s*<\/div>/;
+  const match = generatedHTML.match(regex);
+
+  // check for match & extract vocabulary term
+  let vocabularyTerm;
+  if (match && match.length >= 2) {
+    vocabularyTerm = match[1];
+  }
+
+  // call textToMp3 with vocabulary term as argument
+  textToMp3(vocabularyTerm);
 };
 
 // middleware
@@ -82,9 +97,7 @@ const util = require("util");
 
 const client = new textToSpeech.TextToSpeechClient();
 
-async function textToMp3() {
-  const text = "Hello world";
-
+async function textToMp3(text) {
   const request = {
     input: { text: text },
     voice: { languageCode: "en-US", ssmlGender: "NEUTRAL" },
@@ -99,5 +112,3 @@ async function textToMp3() {
 
   console.log("Text to Speech complete: Audio file saved");
 }
-
-// textToMp3();

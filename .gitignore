@@ -2,3 +2,4 @@
 .env
 serviceAccount.json
 node_modules
+output.mp3

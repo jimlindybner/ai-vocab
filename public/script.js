@@ -35,15 +35,8 @@ const isolateVocab = () => {
   // extract text content
   var word = vocabElem.textContent.trim();
 
-  // call generateMp3 fn
-  generateMp3(word);
-};
-
-const generateMp3 = async (text) => {
-  console.log(text);
-  // send text to app.js
-  // call textToMp3 with text as argument
-  // textToMp3(text);
+  // console log vocab
+  console.log(word);
 };
 
 // event listeners
