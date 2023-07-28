@@ -36,7 +36,7 @@ const openai = new OpenAIApi(configuration);
 // generateVocab function
 const generateVocab = async (req, res) => {
   const prompt = `
-          Generate one SAT-level vocabulary term and provide a definition and example. Return HTML like the following:
+          Generate one SAT-level vocabulary term other than "Ostentatious" and provide a definition and example. Return HTML like the following:
           <div id="vocabulary">
             Ostentatious
           </div>
@@ -108,7 +108,9 @@ async function textToMp3(text) {
 
   const writeFile = util.promisify(fs.writeFile);
 
-  await writeFile("output.mp3", response.audioContent, "binary");
+  const outputPath = path.join(__dirname, "public", "output.mp3");
+
+  await writeFile(outputPath, response.audioContent, "binary");
 
   console.log("Text to Speech complete: Audio file saved");
 }
