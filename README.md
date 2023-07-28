@@ -26,6 +26,7 @@ The pronunciation feature leverages the Google Cloud Text-To-Speech API. When a 
 
 - Node.js for the server-side implementation.
 - Express.js as the web framework.
+- Pug as the templating engine
 - OpenAI API for vocabulary generation.
 - Google Cloud Text-To-Speech API for pronunciation.
 - HTML, CSS, and JavaScript for the frontend.
