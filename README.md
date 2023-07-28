@@ -2,7 +2,7 @@
 
 ## Overview
 
-AI-Powered Vocabulary Index Cards is a web application designed to assist students preparing for the SATs or learning English as a second language in expanding their vocabulary. The app utilizes artificial intelligence and leverages the power of OpenAI's API to generate SAT-level vocabulary index cards complete with definitions and example sentences. Additionally, it offers a "pronunciation" feature that utilizes the Google Cloud Text-To-Speech API to provide an audio representation of the vocabulary words.
+**AI-Powered Vocabulary Index Cards** is a web application designed to assist students preparing for the SATs or learning English as a second language in expanding their vocabulary. The app utilizes artificial intelligence and leverages the power of OpenAI's API to generate SAT-level vocabulary index cards complete with definitions and example sentences. Additionally, it offers a "pronunciation" feature that utilizes the Google Cloud Text-To-Speech API to provide an audio representation of the vocabulary words.
 
 ## Features
 
