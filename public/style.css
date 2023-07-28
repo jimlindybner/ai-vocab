@@ -97,7 +97,7 @@ a#pronunciation::after {
 a#pronunciation {
     display: none;
     color: var(--subtle);
-    padding: 10px;
+    padding: 30px 10px 10px;
     font-weight: bold;
 }
 
