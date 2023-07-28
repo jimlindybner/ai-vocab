@@ -48,7 +48,7 @@ const generateVocab = async (req, res) => {
             Displaying wealth, knowledge, or style in a way that is meant to impress others or attract attention.
           </div>
           <div id="example">
-            &ldquo;At the charity gala, Susan arrived wearing a floor-length, ostentatious gown adorned with glittering diamonds, capturing the attention of everyone in the room.&rdquo;
+            At the charity gala, Susan arrived wearing a floor-length, ostentatious gown adorned with glittering diamonds, capturing the attention of everyone in the room.
           </div>
         `;
 
