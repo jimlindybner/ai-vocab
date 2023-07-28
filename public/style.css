@@ -90,10 +90,15 @@ button:active {
     background-color: var(--primary);
 }
 
+a#pronunciation::before {
+    content: "> ";
+}
+
 a#pronunciation {
     display: none;
     color: var(--subtle);
     padding: 10px;
+    font-weight: bold;
 }
 
 a#pronunciation:hover {
