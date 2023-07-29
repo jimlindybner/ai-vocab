@@ -36,6 +36,18 @@ header {
     gap: 20px;
 }
 
+h1 a {
+    color: var(--primary);
+}
+
+h1 a:hover {
+    text-decoration: none;
+}
+
+h1 a:active {
+    color: var(--subtle);
+}
+
 form {
     background: linear-gradient(var(--tertiary), var(--subtle));
     color: var(--secondary);
@@ -58,6 +70,7 @@ form.pronounce-form {
     background: var(--secondary);
     padding: 20px;
     margin: 20px;
+    border-radius: 8px;
 }
 
 input {
