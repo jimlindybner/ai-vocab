@@ -33,4 +33,4 @@ The pronunciation feature leverages the Google Cloud Text-To-Speech API. When a 
 
 ---
 
-Happy learning and expanding your vocabulary with AI-powered assistance! If you have any questions or need further information, please don't hesitate to contact us.
+Happy learning and expanding your vocabulary with AI-powered assistance!
