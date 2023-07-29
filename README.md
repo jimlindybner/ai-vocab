@@ -20,7 +20,7 @@
 
 The AI-Powered Vocabulary Index Cards web app communicates with the OpenAI API to generate vocabulary terms, definitions, and example sentences. When a user accesses the app, they can click a button to request a new random vocabulary card. The app then sends a request to the OpenAI API, which responds with the generated vocabulary content.
 
-The pronunciation feature leverages the Google Cloud Text-To-Speech API. When a user wants to hear the pronunciation of a word, the app sends a request to the Google Cloud API, which returns an audio file representing the word's pronunciation. The app plays the audio for the user.
+The pronunciation feature leverages the Google Cloud Text-To-Speech API. When a user wants to hear the pronunciation of a word, the app sends a request to the Google Cloud API, which returns an audio file representing the word's pronunciation. The app plays the audio for the user when the "pronunciation" link at the bottom of a vocabulary card is clicked.
 
 ## Technologies Used
 
