@@ -8,9 +8,9 @@
 
 - **SAT-Level Vocabulary Terms**: The application generates high-level vocabulary terms suitable for SAT preparation and English learning.
 
-- **Definitions and Example Sentences**: Each vocabulary index card includes a definition and a carefully crafted example sentence to illustrate the word's usage.
+- **Definitions and Example Sentences**: Each vocabulary index card includes an AI-generated definition and example sentence to illustrate the word's usage.
 
-- **Pronunciation**: The app utilizes the Google Cloud Text-To-Speech API to provide an audio pronunciation of each vocabulary word, helping users learn correct pronunciation.
+- **Pronunciation**: The app utilizes the Google Cloud Text-To-Speech API to provide an audio pronunciation of each vocabulary word, helping users learn the correct pronunciation.
 
 - **User-Friendly Interface**: The web app offers an intuitive and user-friendly interface, making it easy for students to explore and learn new words.
 
@@ -24,12 +24,12 @@ The pronunciation feature leverages the Google Cloud Text-To-Speech API. When a 
 
 ## Technologies Used
 
-- Node.js for the server-side implementation.
+- Node.js for server-side implementation.
 - Express.js as the web framework.
 - Pug as the templating engine
 - OpenAI API for vocabulary generation.
 - Google Cloud Text-To-Speech API for pronunciation.
-- HTML, CSS, and JavaScript for the frontend.
+- HTML, CSS, and JavaScript for the front end.
 
 ---
 
