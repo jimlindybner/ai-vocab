@@ -73,7 +73,7 @@ const generateVocab = async (req, res) => {
     response: response.data.choices[0].message,
   });
 
-  // regex pattern to extract the vocabulary term
+  // regex pattern to extract the vocabulary term, definitoin & example for text-to-speech
   generatedHTML = response.data.choices[0].message.content;
   // console.log(generatedHTML);
   const vocabRegex = /<div id="vocabulary">\s*(\w+)\s*<\/div>/;
