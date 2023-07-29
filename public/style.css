@@ -129,6 +129,20 @@ audio#pronunciation {
     display: block;
 }
 
+a#back-to-home {
+    color: var(--secondary);
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+a#back-to-home:hover {
+    text-decoration: none;
+}
+
+a#back-to-home:active {
+    color: var(--bgclr);
+}
+
 #vocabulary {
     font-size: 2em;
     margin-bottom: 0.75em;
